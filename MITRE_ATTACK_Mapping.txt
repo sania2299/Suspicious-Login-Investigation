@@ -1,0 +1,23 @@
+MITRE ATT&CK Mapping
+
+Technique:
+T1110 – Brute Force
+
+Description:
+Brute Force refers to repeated attempts to guess or obtain valid credentials in order to gain access to an account.
+
+Observed Activity:
+The user "jdoe" received five failed login attempts from the same source IP address.
+
+A successful login was then recorded shortly afterwards from the same IP address.
+
+Reason for Mapping:
+The repeated failed login attempts followed by a successful login are consistent with possible brute-force or password-guessing activity.
+
+SOC Response:
+- Verify whether the login was legitimate
+- Contact the affected user
+- Reset credentials if compromise is suspected
+- Verify MFA is enabled
+- Review additional authentication activity
+- Block the source IP if confirmed malicious

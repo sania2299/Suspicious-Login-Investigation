@@ -1,0 +1,28 @@
+SOC Analysis – Suspicious Login Investigation
+
+User: jdoe
+Source IP: 198.51.100.77
+
+Observed Activity:
+Five failed login attempts were recorded for the user "jdoe" from the same source IP address.
+
+A successful login was then recorded from the same IP address shortly afterwards.
+
+Assessment:
+This pattern may indicate a brute-force or password-guessing attempt.
+
+Because the successful login occurred after several failed attempts, the account should be investigated for possible compromise.
+
+MITRE ATT&CK:
+T1110 – Brute Force
+
+Severity:
+Medium
+
+Recommended Actions:
+- Verify whether the successful login was legitimate.
+- Contact the affected user.
+- Reset the password if compromise is suspected.
+- Verify that MFA is enabled.
+- Review additional authentication logs.
+- Block the source IP if it is confirmed to be malicious.
